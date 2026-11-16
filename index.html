@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Мерейтойға шақыру — Дүндебаев Алмас, 50 жас</title>
+<title>Мерейтойға шақыру — Алмас, 50 жас</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600&family=Noto+Sans:wght@400;500&display=swap">
 <style>
 :root{--bg:#07353b;--bg2:#052428;--gold:#d9b66f;--ink:#f1ece0;--mute:#a9c1bd;--paper:#f4ecd8;--deep:#0e3a3c;
@@ -80,6 +80,37 @@ a.btn{display:inline-block;background:var(--gold);color:#1b2a22;text-decoration:
 a.btn:hover{transform:scale(1.05)}
 a.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 .foot{margin:34px 0 0;font:600 19px/1.6 "Noto Serif",Georgia,serif;color:var(--gold)}
+
+button.btn{border:0;font:500 17px "Noto Sans",sans-serif;cursor:pointer;background:var(--gold);color:#1b2a22;padding:14px 28px;border-radius:999px;transition:transform .2s}
+button.btn:hover{transform:scale(1.05)}
+button.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.rsvp{margin:34px 0 0;padding:26px 18px;border:1px solid rgba(217,182,111,.5);border-radius:6px;background:rgba(5,36,40,.6)}
+.rsvp h2{font:600 22px/1.3 "Noto Serif",Georgia,serif;margin:0 0 8px}
+.rsvp p{margin:0 0 18px;color:var(--mute)}
+.sheet{position:fixed;inset:0;z-index:40;display:none;align-items:flex-end;justify-content:center;background:rgba(2,14,16,.78)}
+.sheet.on{display:flex}
+.sheet .box{width:min(520px,100%);max-height:92vh;overflow:auto;background:var(--paper);color:#1c2a2a;border-radius:18px 18px 0 0;padding:24px 22px calc(26px + env(safe-area-inset-bottom,0px));text-align:left;animation:sh .45s cubic-bezier(.2,.8,.2,1)}
+@keyframes sh{from{transform:translateY(100%)}to{transform:none}}
+.box h3{font:600 22px/1.3 "Noto Serif",Georgia,serif;margin:0 0 4px;color:var(--deep)}
+.box .s{margin:0 0 18px;color:#5a6a67;font-size:15px}
+.box label,.box legend{display:block;font-weight:500;margin:16px 0 6px;padding:0}
+.box fieldset{border:0;padding:0;margin:0}
+.box input[type=text],.box select{width:100%;font:400 17px "Noto Sans",sans-serif;padding:13px 14px;border:1.5px solid #b9a77a;border-radius:8px;background:#fff;color:#1c2a2a}
+.box input:focus-visible,.box select:focus-visible{outline:3px solid var(--deep);outline-offset:1px}
+.opt{display:flex;gap:10px;align-items:center;padding:12px 14px;border:1.5px solid #b9a77a;border-radius:8px;margin-bottom:8px;background:#fff;cursor:pointer}
+.opt input{accent-color:var(--deep);width:20px;height:20px}
+.opt:has(input:checked){border-color:var(--deep);background:#e6efe9}
+.err{color:#a3321f;font-size:15px;min-height:20px;margin:8px 0 0}
+.row{display:flex;gap:10px;margin-top:12px}
+.row .btn{flex:1;background:var(--deep);color:var(--ink)}
+.row .no{background:transparent;color:var(--deep);border:1.5px solid var(--deep)}
+.ok{text-align:center;padding:10px 0}
+.ok svg{width:84px;height:84px;margin:0 auto 12px;display:block}
+.ok path{stroke-dasharray:60;stroke-dashoffset:60;animation:tick .8s ease .2s forwards}
+.ok circle{stroke-dasharray:252;stroke-dashoffset:252;animation:tick 1s ease forwards}
+@keyframes tick{to{stroke-dashoffset:0}}
+.ok h3{margin-bottom:8px}
+.demo{margin-top:14px;font-size:14px;color:#7a5a1f}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}#sparks,.doors{display:none}}
 </style>
 </head>
@@ -107,15 +138,15 @@ a.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 <b id="num">50</b>
 </div>
 <h1 class="rv">Мерейтойға шақыру</h1>
-<p class="who rv">Дүндебаев Алмас</p>
+<p class="who rv">Алмас</p>
 <div class="card rv">
 <div class="band d" aria-hidden="true"></div>
-<p class="hi">Ассалаумағалейкум, ардақты ағайын, құрметті құрдастар, бауырлар, дос-жаран!</p>
+<p class="hi">Ассалаумағалейкум, құрметті құрдастар, бауырлар, дос-жаран!</p>
 <p>Баршаңызға амандық, дендеріңізге саулық тілеймін!</p>
-<p>Сіздерді <b>Дүндебаев Алмастың 50 жас мерейтойына</b> арналған ақ дастарқанының қадірлі қонағы болуға шақырамын.</p>
+<p>Сіздерді <b>Алмастың 50 жас мерейтойына</b> арналған ақ дастарқанының қадірлі қонағы болуға шақырамын.</p>
 <p class="q">Елу жас – ел ағасы атанған, өмірдің талай белесін бағындырған мерейлі жас.</p>
 <p>Осы қуанышты күнімізде бас қосып, ақ тілектеріңізді арнап, мерекеміздің сәнін кіргізулеріңізді асыға күтеміз!</p>
-<p class="end">Қуанышымызда жүздескенше, ағайын!</p>
+<p class="end">Қуанышымызда жүздескенше, құрдастар!</p>
 <div class="band d" aria-hidden="true"></div>
 </div>
 <figure class="photo rv" id="ph">
@@ -129,12 +160,43 @@ a.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 <div class="w">сенбі</div>
 </div>
 <dl class="rv">
-<div><dt>Уақыты</dt><dd class="ph" style="border:0">[сағат]</dd></div>
+<div><dt>Уақыты</dt><dd>Кешкі сағат 19:00</dd></div>
 <div><dt>Орны</dt><dd>«Дудук» кафесі<br>Есік қаласы, Алматинская көшесі, 114</dd></div>
 </dl>
 <a class="btn rv" href="https://2gis.kz/search/%D0%94%D1%83%D0%B4%D1%83%D0%BA%20%D0%95%D1%81%D0%B8%D0%BA%20%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20114">2ГИС картасынан көру</a>
-<p class="foot rv">Қуанышымызда жүздескенше, ағайын!</p>
+<div class="rsvp rv">
+<h2>Келуіңізді растаңыз</h2>
+<p>Дастарқанды дұрыс жайу үшін алдын ала білгеніміз жөн.</p>
+<button class="btn" id="rsvpBtn" type="button">Келуді растау</button>
+</div>
+<p class="foot rv">Қуанышымызда жүздескенше, құрдастар!</p>
 </main>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="st">
+<div class="box" id="box">
+<div id="f">
+<h3 id="st">Келуді растау</h3>
+<p class="s">Алмастың 50 жас мерейтойы, 21 қараша</p>
+<label for="nm">Аты-жөніңіз</label>
+<input type="text" id="nm" autocomplete="name">
+<fieldset><legend>Келесіз бе?</legend>
+<label class="opt"><input type="radio" name="c" value="yes"> Иә, келемін</label>
+<label class="opt"><input type="radio" name="c" value="no"> Өкінішке қарай, келе алмаймын</label>
+</fieldset>
+<label for="cnt">Неше адам келесіз?</label>
+<select id="cnt"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+<p class="err" id="err" role="alert"></p>
+<div class="row"><button class="btn no" type="button" id="cl">Жабу</button><button class="btn" type="button" id="send">Жіберу</button></div>
+</div>
+<div class="ok" id="ok" hidden>
+<svg viewBox="0 0 84 84" fill="none" stroke="#0e3a3c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="42" cy="42" r="40"/><path d="M26 43l11 11 21-23"/></svg>
+<h3 id="okt">Рақмет!</h3>
+<p class="s" id="oks"></p>
+<button class="btn" type="button" id="cl2" style="background:var(--deep);color:var(--ink)">Жабу</button>
+<p class="demo" id="demo"></p>
+</div>
+</div>
+</div>
+
 <div class="band slide" aria-hidden="true" style="position:relative;z-index:2"></div>
 <script>
 (function(){
@@ -162,6 +224,28 @@ n.textContent='0';
 var im=document.querySelectorAll('#ph .s'),dt=document.querySelectorAll('#dots i'),k=0;
 setInterval(function(){im[k].classList.remove('on');dt[k].classList.remove('on');k=(k+1)%im.length;
 void im[k].offsetWidth;im[k].classList.add('on');dt[k].classList.add('on');},4500);}
+
+var DEMO=false;var FORM_URL='';
+if(!FORM_URL&&!DEMO){var rs=document.querySelector('.rsvp');if(rs)rs.style.display='none';}
+var sh=document.getElementById('sheet');
+function op(){document.getElementById('f').hidden=false;document.getElementById('ok').hidden=true;sh.classList.add('on');b.classList.add('lock');setTimeout(function(){document.getElementById('nm').focus()},300);}
+function cl(){sh.classList.remove('on');if(!doors||doors.style.display==='none')b.classList.remove('lock');}
+document.getElementById('rsvpBtn').addEventListener('click',function(){if(FORM_URL){window.open(FORM_URL,'_blank','noopener');}else{op();}});
+document.getElementById('cl').addEventListener('click',cl);
+document.getElementById('cl2').addEventListener('click',cl);
+sh.addEventListener('click',function(e){if(e.target===sh)cl();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')cl();});
+document.getElementById('send').addEventListener('click',function(){
+var nm=document.getElementById('nm').value.trim(),c=document.querySelector('input[name=c]:checked'),er=document.getElementById('err');
+if(!nm){er.textContent='Атыңызды жазыңыз.';return;}
+if(!c){er.textContent='«Келесіз бе?» дегенді таңдаңыз.';return;}
+er.textContent='';
+var yes=c.value==='yes';
+document.getElementById('okt').textContent=yes?'Рақмет, '+nm+'!':'Рақмет, '+nm+'.';
+document.getElementById('oks').textContent=yes?'Жауабыңыз қабылданды. Сізді '+document.getElementById('cnt').value+' адам болып күтеміз. Қуанышымызға ортақ болыңыз!':'Жауабыңыз қабылданды. Қуанышымыз бөлек болмасын, ақ тілегіңізге рақмет!';
+document.getElementById('demo').textContent='Көрсетілім: жауап әзірге ешқайда жіберілмейді.';
+document.getElementById('f').hidden=true;document.getElementById('ok').hidden=false;
+});
 })();
 </script>
 </body>
